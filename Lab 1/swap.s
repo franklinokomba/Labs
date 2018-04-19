@@ -40,12 +40,16 @@ main:
 swap:	
 	slli	t1, a1, 2	#reg t1=k*4
 	add		t1, a0, t1	#reg t1=address of zing[k]
+	   
 				
 	lw		t0, 0(t1)	#reg t0=zing[k]
 	lw		t2, 4(t1)	#reg t2=zing[k+1]
 				
 	sw		t2, 0(t1)	
-	sw		t0, 4(t1)	
+	sw		t0, 4(t1)
+	addi            t4, zero,5
+	addi	        t5, t4, 2
+	add             t6, t4, t5
 	ret		
 
 # END OF PROGRAM
