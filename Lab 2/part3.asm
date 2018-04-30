@@ -1,15 +1,14 @@
 
 .data
-i: .word 0
-z: .word 2
+
 .text
 	
 
 main:	
 	
-	la t0 i
+	li t0 0
 	li t4 100
-	la  s0 z
+	li  s0 2
 	
 	forloop: slti t1, t0 20
 	beq t1, zero dowhile
