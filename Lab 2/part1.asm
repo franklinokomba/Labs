@@ -1,6 +1,6 @@
 
 .data
-newline: .asciiz "\n"
+zvalue: .word 0
 .text
 
 
@@ -11,7 +11,7 @@ main:
 	li t4, 2
 	li t5, 18
 	li t6, -3
-	li t0, 0
+	la a0, zvalue
 	
 	sub a1, t1, t2
 

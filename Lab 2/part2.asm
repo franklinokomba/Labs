@@ -1,13 +1,16 @@
 
 .data
-
+a: .word 10
+b: .word 15
+c: .word 6
+z: .word 0
 .text
 
 main:
-	li t1, 10
-	li t2, 9
-	li t3, 6
-	li a1, 0
+	la t1, a
+	la t2, b
+	la t3, c
+	la a1, z
 	
 	slt t4, t1,t2
 	li t0, 5

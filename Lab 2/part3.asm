@@ -1,14 +1,15 @@
 
 .data
-
+i: .word 0
+z: .word 2
 .text
 	
 
 main:	
 	
-	li t0 0
+	la t0 i
 	li t4 100
-	li  s0 2
+	la  s0 z
 	
 	forloop: slti t1, t0 20
 	beq t1, zero dowhile
