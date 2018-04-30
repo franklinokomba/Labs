@@ -23,7 +23,7 @@ main:
 
         add a0, a1,a2
         add a0, a0, a3
-        add a0, a0, a4
+        sub a0, a0, a4
         
         li a7, 1
         ecall 
